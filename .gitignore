@@ -52,3 +52,4 @@ app.*.map.json
 /macos/firebase_app_id_file.json
 /macos/Flutter/GeneratedPluginRegistrant.swift
 /android/app/google-services.json
+/ios/Runner/Info.plist

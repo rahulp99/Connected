@@ -1,16 +1,20 @@
-# connected
+# Connected
 
-A new Flutter project.
+A real-time chatting application developed using Flutter and Firebase.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Steps to setup the application:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Connect to Firebase. Go to [Firebase console](https://console.firebase.google.com/) and create a new project, disabling Google Analytics.
+- Enable Google Sign-In method.
+- Create a Firestore Database under Test mode.
+- Initialize Firebase from Dart referring to [Flutter Fire](https://firebase.flutter.dev/docs/overview/) documentation.
+- Install Firebase CLI referring the [documentation](https://firebase.google.com/docs/cli).
+- Run the command to activate FlutterFire CLI:
+` dart pub global activate flutterfire_cli `
+- Run this command to choose the Firebase project created earlier:
+` flutterfire configure `
+- Go to _/ios/Runner/Info.plist_ and add your **REVERSED_CLIENT_ID** from Firebase project.
+- Now run the app in connected android/ios device using the command:
+`flutter run`
